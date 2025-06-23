@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>True North Voices</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>True North Voices</h1>
+    <p>Exploring Canada's National Identity</p>
+  </header>
+
+  <section>
+    <h2>Poll: Should Canada have a unified national identity?</h2>
+    <form id="identityPoll">
+      <input type="radio" name="identity" value="unified"> Unified National Identity<br>
+      <input type="radio" name="identity" value="pluralistic"> Diverse/Pluralistic Identity<br><br>
+      <button type="button" onclick="submitPoll()">Submit</button>
+    </form>
+
+    <div id="pollResult" style="margin-top: 20px;"></div>
+  </section>
+
+  <script src="scripts/poll.js"></script>
+</body>
+</html>

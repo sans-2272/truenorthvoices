@@ -1,0 +1,18 @@
+function submitPoll() {
+  const options = document.getElementsByName('identity');
+  let selectedValue = null;
+
+  for (let option of options) {
+    if (option.checked) {
+      selectedValue = option.value;
+      break;
+    }
+  }
+
+  const resultDiv = document.getElementById('pollResult');
+  if (selectedValue) {
+    resultDiv.innerHTML = `<strong>Thank you!</strong> You voted for: <em>${selectedValue}</em>`;
+  } else {
+    resultDiv.innerHTML = `<span style="color: red;">Please select an option before submitting.</span>`;
+  }
+}
