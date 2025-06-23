@@ -17,7 +17,19 @@
       <input type="radio" name="identity" value="unified"> Unified National Identity<br>
       <input type="radio" name="identity" value="pluralistic"> Diverse/Pluralistic Identity<br><br>
       <button type="button" onclick="submitPoll()">Submit</button>
-    </form>
+    </<section id="poll">
+  <h2>Poll: Should Canada have a unified national identity?</h2>
+  <div class="poll-option" onclick="vote('unified')">
+    <span>🇨🇦 Unified National Identity</span>
+    <div class="poll-bar" id="bar-unified"></div>
+    <span class="poll-percent" id="percent-unified">0%</span>
+  </div>
+  <div class="poll-option" onclick="vote('pluralistic')">
+    <span>🌎 Pluralistic / Diverse Identity</span>
+    <div class="poll-bar" id="bar-pluralistic"></div>
+    <span class="poll-percent" id="percent-pluralistic">0%</span>
+  </div>
+</section> >
 
     <div id="pollResult" style="margin-top: 20px;"></div>
   </section>

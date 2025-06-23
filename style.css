@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2em;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background-color: #0055a4;
+  color: white;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+.poll-option {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.poll-option:hover {
+  background-color: #f0f8ff;
+}
+
+.poll-bar {
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 12px;
+  width: 0%;
+  transition: width 0.8s ease-in-out;
+  margin-top: 5px;
+}
+
+.poll-percent {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+}
